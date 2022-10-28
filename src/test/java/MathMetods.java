@@ -21,11 +21,11 @@ public class MathMetods {
         return result;
     }
 
-    public static double areaTriangle(double weight, double height) {
-        if (weight <= 0 |height <=0) {
-            throw new ArithmeticException(String.format("Parameters has value: %f, %f. Parameters must more than 0!", weight, height));
+    public static double areaTriangle(double length, double height) {
+        if (length <= 0 |height <=0) {
+            throw new ArithmeticException(String.format("Parameters has value: %f, %f. Parameters must more than 0!", length, height));
         }
-        double result = weight*height/2;
+        double result = length*height/2;
         return result;
     }
 }
